@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment android:id="@+id/google_map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"/>
+
+    <Button
+        android:id="@+id/button_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/google_map"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/start"
+        android:layout_marginStart="90dp" />
+
+    <Button
+        android:id="@+id/button_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/google_map"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/finish"
+        android:layout_toRightOf="@id/button_start"
+        android:layout_toEndOf="@id/button_start"
+        android:layout_marginStart="45dp" />
+
+    <TextView
+        android:id="@+id/text_length"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_start"
+        android:layout_margin="10dp"
+        android:text="@string/length"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_runLength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_start"
+        android:layout_margin="10dp"
+        android:layout_toEndOf="@+id/text_length"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:layout_toRightOf="@+id/text_length" />
+
+    <TextView
+        android:id="@+id/text_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_length"
+        android:layout_margin="10dp"
+        android:text="@string/speed"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_runSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_length"
+        android:layout_margin="10dp"
+        android:layout_toEndOf="@+id/text_length"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:layout_toRightOf="@+id/text_length" />
+
+    <TextView
+        android:id="@+id/text_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_speed"
+        android:layout_margin="10dp"
+        android:text="@string/time"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Chronometer
+        android:id="@+id/chronometer_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_speed"
+        android:layout_margin="10dp"
+        android:layout_toEndOf="@+id/text_length"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:layout_toRightOf="@+id/text_length" />
+
+</RelativeLayout>

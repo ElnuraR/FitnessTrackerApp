@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:id="@+id/list_path"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/length"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/list_runLength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_toEndOf="@+id/text_length"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:layout_toRightOf="@+id/text_length" />
+
+        <TextView
+            android:id="@+id/text_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_length"
+            android:layout_margin="10dp"
+            android:text="@string/speed"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/list_runSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/list_runLength"
+            android:layout_margin="10dp"
+            android:layout_toEndOf="@id/text_length"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:layout_toRightOf="@id/text_length" />
+
+        <TextView
+            android:id="@+id/text_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_speed"
+            android:layout_margin="10dp"
+            android:text="@string/time"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/list_runTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/list_runSpeed"
+            android:layout_margin="10dp"
+            android:layout_toEndOf="@+id/text_length"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:layout_toRightOf="@+id/text_length" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
